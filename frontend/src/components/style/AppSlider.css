@@ -1,0 +1,10 @@
+.sliderStyle{
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 900px ) {
+.sliderStyle{
+    display: none;
+}
+}

@@ -1,0 +1,14 @@
+.portfolioChart{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    height: 400px;
+}
+@media only screen and (max-width: 620px) {
+    .portfolioChart{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        height: 250px;
+    }
+}

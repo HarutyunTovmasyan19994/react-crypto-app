@@ -3,17 +3,15 @@ import {Layout, Card, Statistic, List, Typography, Tag} from "antd";
 import {ArrowUpOutlined, ArrowDownOutlined} from '@ant-design/icons'
 import {capitalize} from "../../utils.js";
 import CryptoContext from "../../context/crypto-context.jsx";
+import "../style/AppSlider.css"
 
-const siderStyle = {
-    padding: '1rem',
-};
 
 
 export default function AppSlider() {
     const {assets} = useContext(CryptoContext)
 
     return (
-        <Layout.Sider width="25%" style={siderStyle}>
+        <Layout.Sider width="25%" className="sliderStyle">
             {
                 assets.map(assets => (
                     <Card key={assets.id} style={{marginBottom: "1rem"}}>

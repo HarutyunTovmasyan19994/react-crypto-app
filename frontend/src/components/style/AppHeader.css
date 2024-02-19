@@ -1,0 +1,14 @@
+.selected{
+    width: 250px;
+}
+
+@media only screen and (max-width: 900px ) {
+    .selected{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .selected{
+        width: 150px;
+    }
+}

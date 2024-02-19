@@ -3,6 +3,7 @@ import {useCrypto} from "../../context/crypto-context.jsx";
 import {useEffect, useState} from "react";
 import CoinInfoModal from "../CoinInfoModal.jsx";
 import AddAssetsForm from "../AddAssetsForm.jsx";
+import "../style/AppHeader.css"
 
 const headerStyle = {
     width: "100%",
@@ -41,9 +42,7 @@ export default function AppHeader() {
     return (
         <Layout.Header style={headerStyle}>
             <Select
-                style={{
-                    width: 250,
-                }}
+                className="selected"
                 open={select}
                 onSelect={handleSelect}
                 onClick={() => setSelect(prev => !prev)}
